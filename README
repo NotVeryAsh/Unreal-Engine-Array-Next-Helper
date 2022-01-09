@@ -1,0 +1,16 @@
+The Next() function returns the next element in the array (the element with an index of n+1, or the element with an array of 0).
+If the last index of the array is passed in, the function will return the first element of the array (the element with an index of 0).
+If an invalid index is passed in, the function will return a nullptr.
+
+
+The Next() function is defined twice.
+  The first definition takes in a SizeType Index parameter which is the Index of the element that precedes the "Next" element.
+  The second definition takes in an ElementType* Item parameter which is the Item that precedes the "Next" element. 
+  
+Having two definitions of the function allows you to search for the next element in the array, in relation to the passed in index or object.  
+
+
+Supposing you have an array with 3 elements, if you initially pass in index 0 and repeatedly call the function by passing in the last returned result, the process should look as such:
+
+Next(0) -> returns Array[1] n -> Next(n) -> returns Array[2] n -> Next(n) -> returns Array[0] n -> Next(n) -> returns Array[1] ...
+
