@@ -14,3 +14,5 @@ Supposing you have an array with 3 elements, if you initially pass in index 0 an
 
 Next(0) -> returns Array[1] n -> Next(n) -> returns Array[2] n -> Next(n) -> returns Array[0] n -> Next(n) -> returns Array[1] ...
 
+
+You can implement these features into your engine simply by adding the code in ArrayNext.h into a public section of Source/Runtime/Core/Public/Containers/Array.h
